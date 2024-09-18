@@ -8,5 +8,5 @@ The dataset we are using here is called FordA. The data comes from the UCR archi
 ### Standardize the data
 Our timeseries are already in a single length (500). However, their values are usually in various ranges. This is not ideal for a neural network; in general we should seek to make the input values normalized. For this specific dataset, the data is already z-normalized: each timeseries sample has a mean equal to zero and a standard deviation equal to one. This type of normalization is very common for timeseries classification problems.
 
-### Conclusion:
+### Conclusion
 The model achieves optimal performance after 200 epochs, with balanced training and validation accuracies (0.97). Further training leads to overfitting, indicating 200 epochs as the optimal stopping point.
